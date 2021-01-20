@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Release/USBRead.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="USB" design-size="341 217">
+    <property name="MemberName">mUSB</property>
+    <property name="Title" translatable="yes">USB READ</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VPaned" id="vpaned1">
+        <property name="MemberName" />
+        <property name="CanFocus">True</property>
+        <property name="Position">148</property>
+        <child>
+          <widget class="Gtk.Label" id="label">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="Resize">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.EventBox" id="eventbox1">
+            <property name="MemberName" />
+            <property name="VisibleWindow">False</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed1">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Button" id="button2">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">   Stop  </property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="On_bStop" />
+                  </widget>
+                  <packing>
+                    <property name="X">266</property>
+                    <property name="Y">14</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="button1">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">   Pusk   </property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="On_bPusk" />
+                  </widget>
+                  <packing>
+                    <property name="X">178</property>
+                    <property name="Y">14</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
